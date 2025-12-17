@@ -1,7 +1,3 @@
 import React from "react";
-
-const Shirt = () => {
-  return <h3>Shirt</h3>;
-};
-
+const Shirt = () => <div>Shirt</div>;
 export default Shirt;

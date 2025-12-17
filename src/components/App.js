@@ -7,17 +7,17 @@ const App = () => {
   return (
     <BrowserRouter>
       <main>
-        <div>
-          <Link to="/">Home</Link>
-        </div>
-        <div>
-          <Link to="/women">Women</Link>
-        </div>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/women">Women</Link></li>
+        </ul>
 
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/women" component={Women} />
-        </Switch>
+        <div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/women" component={Women} />
+          </Switch>
+        </div>
       </main>
     </BrowserRouter>
   );
