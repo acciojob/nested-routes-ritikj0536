@@ -1,13 +1,22 @@
-
 import React from "react";
-import './../styles/App.css';
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import Home from "./Home";
+import Women from "./Women";
 
 const App = () => {
   return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
-}
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Home</Link> |{" "}
+        <Link to="/women">Women</Link>
+      </nav>
 
-export default App
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/women" component={Women} />
+      </Switch>
+    </BrowserRouter>
+  );
+};
+
+export default App;
