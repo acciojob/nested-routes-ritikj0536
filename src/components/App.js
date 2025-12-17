@@ -6,19 +6,21 @@ import Women from "./Women";
 const App = () => {
   return (
     <BrowserRouter>
-      <main>
+      <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/women">Women</Link></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/women">Women</Link>
+          </li>
         </ul>
+      </nav>
 
-        <div>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/women" component={Women} />
-          </Switch>
-        </div>
-      </main>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/women" component={Women} />
+      </Switch>
     </BrowserRouter>
   );
 };
