@@ -13,10 +13,20 @@ const Women = () => {
       <h2>Women Category</h2>
 
       <nav>
-        <Link to={`${url}/grooming`}>Grooming</Link> |{" "}
-        <Link to={`${url}/shirt`}>Shirt</Link>|{" "}
-        <Link to={`${url}/trouser`}>Trouser</Link>|{" "}
-        <Link to={`${url}/jewellery`}>Jewellery</Link>
+        <ul>
+          <li>
+            <Link to={`${url}/grooming`}>Grooming</Link>
+          </li>
+          <li>
+            <Link to={`${url}/shirt`}>Shirt</Link>
+          </li>
+          <li>
+            <Link to={`${url}/trouser`}>Trouser</Link>
+          </li>
+          <li>
+            <Link to={`${url}/jewellery`}>Jewellery</Link>
+          </li>
+        </ul>
       </nav>
 
       <Switch>
