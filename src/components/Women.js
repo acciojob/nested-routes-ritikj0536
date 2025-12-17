@@ -12,32 +12,28 @@ const Women = () => {
     <div>
       <h2>Women Category</h2>
 
-      <nav>
-        <ul>
-          <li>
-            <Link to={`${url}/grooming`}>Grooming</Link>
-          </li>
-          <li>
-            <Link to={`${url}/shirt`}>Shirt</Link>
-          </li>
-          <li>
-            <Link to={`${url}/trouser`}>Trouser</Link>
-          </li>
-          <li>
-            <Link to={`${url}/jewellery`}>Jewellery</Link>
-          </li>
-        </ul>
-      </nav>
+      <div>
+        <Link to={`${url}/Grooming`}>Grooming</Link>
+      </div>
+      <div>
+        <Link to={`${url}/Shirt`}>Shirt</Link>
+      </div>
+      <div>
+        <Link to={`${url}/Trouser`}>Trouser</Link>
+      </div>
+      <div>
+        <Link to={`${url}/Jewellery`}>Jewellery</Link>
+      </div>
 
       <Switch>
         <Route exact path={path}>
           <p>Please select a category</p>
         </Route>
 
-        <Route path={`${path}/grooming`} component={Grooming} />
-        <Route path={`${path}/shirt`} component={Shirt} />
-        <Route path={`${path}/trouser`} component={Trouser} />
-        <Route path={`${path}/jewellery`} component={Jewellery} />
+        <Route path={`${path}/Grooming`} component={Grooming} />
+        <Route path={`${path}/Shirt`} component={Shirt} />
+        <Route path={`${path}/Trouser`} component={Trouser} />
+        <Route path={`${path}/Jewellery`} component={Jewellery} />
       </Switch>
     </div>
   );
